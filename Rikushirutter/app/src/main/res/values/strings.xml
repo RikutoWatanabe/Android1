@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Rikushirutter</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="twitter_consumer_key">2R342eH9wSh5pwuIJj0bPOYTQ</string>
+    <string name="twitter_consumer_secret">WRGmmvN2FKqI3PfwncM1b5w8Od0QifQfk0TFj9tX9stzHtBT2i</string>
+    <string name="title_activity_twitter_oauth">TwitterOAuthActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="twitter_callback_url">rikushiru://twitter</string>
+
+</resources>
