@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id = "@+id/menu_refresh"
+        android:icon="@drawable/ic_popup_sync_5"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom|withText"
+        android:title="refresh" />
+
+    <item
+        android:id="@+id/menu_tweet"
+        android:icon="@drawable/ic_action_compose"
+        android:orderInCategory="200"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/menu_tweet"/>
+
+</menu>

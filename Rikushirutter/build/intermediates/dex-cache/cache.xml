@@ -2,11 +2,11 @@
 <items version="2" >
 
     <item
-        jar="/Users/RikutoW/AndroidStudioProjects/Rikushirutter/app/libs/twitter4j-core-4.0.4.jar"
+        jar="/Users/RikutoW/AndroidStudioProjects/Rikushirutter/app/libs/android-smart-image-view-1.0.0.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="f4ac5989c7be37249dfe310bf78ba69773ebce2d">
-        <dex dex="/Users/RikutoW/AndroidStudioProjects/Rikushirutter/app/build/intermediates/pre-dexed/debug/twitter4j-core-4.0.4-c650eb6268810ea8b04868ccde3c658852361580.jar" />
+        sha1="d76ea8c3e9a60101244d6d04aff8cc75888570f0">
+        <dex dex="/Users/RikutoW/AndroidStudioProjects/Rikushirutter/app/build/intermediates/pre-dexed/debug/android-smart-image-view-1.0.0-280fd4c78581ebf1baa79c79d6cc790c4864324f.jar" />
     </item>
     <item
         jar="/Users/RikutoW/AndroidStudioProjects/Rikushirutter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/classes.jar"
@@ -16,6 +16,13 @@
         <dex dex="/Users/RikutoW/AndroidStudioProjects/Rikushirutter/app/build/intermediates/pre-dexed/debug/classes-288673e809b5c9a23eab2b8141c90ff6128e9e73.jar" />
     </item>
     <item
+        jar="/Users/RikutoW/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="/Users/RikutoW/AndroidStudioProjects/Rikushirutter/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-ef669e49879e583045b2530dafd94629d05efe40.jar" />
+    </item>
+    <item
         jar="/Users/RikutoW/AndroidStudioProjects/Rikushirutter/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -23,18 +30,18 @@
         <dex dex="/Users/RikutoW/AndroidStudioProjects/Rikushirutter/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-f99bb8b52bbee52a53e0d3346ad0ef47a2e35ea2.jar" />
     </item>
     <item
+        jar="/Users/RikutoW/.gradle/caches/modules-2/files-2.1/org.twitter4j/twitter4j-core/4.0.4/1f3c896c7b2f20c51103078ccf0bc2ea97ac012a/twitter4j-core-4.0.4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1f3c896c7b2f20c51103078ccf0bc2ea97ac012a">
+        <dex dex="/Users/RikutoW/AndroidStudioProjects/Rikushirutter/app/build/intermediates/pre-dexed/debug/twitter4j-core-4.0.4-6534b0dff1204d690a8180882875961d67317504.jar" />
+    </item>
+    <item
         jar="/Users/RikutoW/AndroidStudioProjects/Rikushirutter/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
         <dex dex="/Users/RikutoW/AndroidStudioProjects/Rikushirutter/app/build/intermediates/pre-dexed/debug/classes-92db8b62b619d0b295fe1ec9de2575213479dca2.jar" />
-    </item>
-    <item
-        jar="/Users/RikutoW/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
-        <dex dex="/Users/RikutoW/AndroidStudioProjects/Rikushirutter/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-ef669e49879e583045b2530dafd94629d05efe40.jar" />
     </item>
 
 </items>

@@ -66,7 +66,7 @@ public class TwitterOAuthActivity extends ActionBarActivity {
     }
     @Override
     public void onNewIntent(Intent intent){
-        if(intent == null || intent.getData().toString().startsWith(mCallbackURL)){
+        if(intent == null || intent.getData() == null || !intent.getData().toString().startsWith(mCallbackURL)){
             return;
         }
         String verifier = intent.getData().getQueryParameter("oauth_verifier");
