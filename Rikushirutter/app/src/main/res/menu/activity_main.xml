@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    >
+
+    <item
+        android:id="@+id/menu_barusu"
+        android:icon="@drawable/abc_ic_ab_back_mtrl_am_alpha"
+        android:orderInCategory="50"
+        android:showAsAction="ifRoom|withText"
+        android:title="バルス!"/>
 
     <item
         android:id = "@+id/menu_refresh"
@@ -14,5 +25,7 @@
         android:orderInCategory="200"
         android:showAsAction="ifRoom|withText"
         android:title="@string/menu_tweet"/>
+
+
 
 </menu>

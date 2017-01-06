@@ -3,8 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity">
 
-    <item android:id="@+id/action_settings" android:title="@string/menu_settings"
-        android:orderInCategory="100" app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_barusu"
+        android:icon="@drawable/abc_ic_ab_back_mtrl_am_alpha"
+        android:orderInCategory="50"
+        android:showAsAction="always"
+        android:title="バルス!"/>
 
     <item
         android:id = "@+id/menu_refresh"

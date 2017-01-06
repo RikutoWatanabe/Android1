@@ -19,6 +19,7 @@ import com.loopj.android.image.SmartImageView;
 
 import java.util.List;
 
+import twitter4j.Paging;
 import twitter4j.Status;
 import twitter4j.Twitter;
 import twitter4j.TwitterException;
@@ -29,11 +30,13 @@ public class MainActivity extends ListActivity {
 
     private TweetAdapter mAdapter;
     private Twitter mTwitter;
+    private Paging paging;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        paging = new Paging();
+        paging.setCount(100);
 
         if (!TwitterUtils.hasAccessToken(this)) {
             Intent intent = new Intent(this, TwitterOAuthActivity.class);
@@ -84,7 +87,7 @@ public class MainActivity extends ListActivity {
         @Override
             protected List<twitter4j.Status> doInBackground(Void... params) {
                 try{
-                    return mTwitter.getHomeTimeline();
+                    return mTwitter.getHomeTimeline(paging);
                 } catch (TwitterException e) {
                     e.printStackTrace();
                 }
@@ -100,7 +103,7 @@ public class MainActivity extends ListActivity {
                     }
                     getListView().setSelection(0);
                 } else{
-                    showToast("Faild to get TimeLine. by Rikushirutter ");
+                    showToast("Failed to get TimeLine. by Rikushirutter ");
                 }
             }
         };
@@ -130,6 +133,7 @@ public class MainActivity extends ListActivity {
             return true;
         }
 
+
         switch (item.getItemId()) {
             case R.id.menu_refresh:
                 reloadTimeLine();
@@ -137,6 +141,31 @@ public class MainActivity extends ListActivity {
             case R.id.menu_tweet:
                 Intent intent = new Intent(this, TweetActivity.class);
                 startActivity(intent);
+                return true;
+            case R.id.menu_barusu:
+                mTwitter = TwitterUtils.getTwitterInstance(this);
+                AsyncTask<String, Void, Boolean>task = new AsyncTask<String, Void, Boolean>() {
+                    @Override
+                    protected Boolean doInBackground(String... params) {
+                        try {
+                            mTwitter.updateStatus("バルス!!");
+                            return true;
+                        } catch (TwitterException e) {
+                            e.printStackTrace();
+                            return false;
+                        }
+                    }
+                    @Override
+                    protected void onPostExecute(Boolean result){
+                        if(result){
+                            showToast("Tweet success!");
+                            finish();
+                        } else{
+                            showToast("Failed...");
+                        }
+                    }
+                };
+                task.execute();
                 return true;
         }
         return super.onOptionsItemSelected(item);

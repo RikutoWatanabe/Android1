@@ -33,6 +33,7 @@ public class TweetActivity extends FragmentActivity {
                 tweet();
             }
         });
+
     }
     private void tweet(){
         AsyncTask<String, Void, Boolean>task = new AsyncTask<String, Void, Boolean>() {
@@ -59,6 +60,7 @@ public class TweetActivity extends FragmentActivity {
         };
         task.execute(mInputText.getText().toString());
     }
+
 
     private void showToast(String text){
         Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
