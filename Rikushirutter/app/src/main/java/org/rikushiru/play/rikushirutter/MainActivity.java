@@ -18,6 +18,7 @@ import android.widget.Toast;
 import com.loopj.android.image.SmartImageView;
 
 import java.util.List;
+import java.util.Random;
 
 import twitter4j.Paging;
 import twitter4j.Status;
@@ -148,7 +149,10 @@ public class MainActivity extends ListActivity {
                     @Override
                     protected Boolean doInBackground(String... params) {
                         try {
-                            mTwitter.updateStatus("バルス!!");
+                            Random rdm = new Random();
+                            int ran = rdm.nextInt(1000);
+                            String kai = System.getProperty("line.separator");//改行文字をプロパティから取得
+                            mTwitter.updateStatus("バルス!!" + kai + kai + ran);
                             return true;
                         } catch (TwitterException e) {
                             e.printStackTrace();
@@ -159,7 +163,6 @@ public class MainActivity extends ListActivity {
                     protected void onPostExecute(Boolean result){
                         if(result){
                             showToast("Tweet success!");
-                            finish();
                         } else{
                             showToast("Failed...");
                         }

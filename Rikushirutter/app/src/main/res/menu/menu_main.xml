@@ -5,7 +5,7 @@
 
     <item
         android:id="@+id/menu_barusu"
-        android:icon="@drawable/abc_ic_ab_back_mtrl_am_alpha"
+        android:icon="@drawable/barusu"
         android:orderInCategory="50"
         android:showAsAction="always"
         android:title="バルス!"/>
